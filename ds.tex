@@ -1,0 +1,145 @@
+
+\documentclass{rmf-d}
+\usepackage{nopageno,rmfbib,multicol,times,epsf,amsmath,amssymb,cite}
+\usepackage[T1]{fontenc} %Especial para español (for spanish)
+%\usepackage[spanish, mexico]{babel}
+\usepackage[]{caption2}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{minted}
+
+\def\rmfcornisa{© DEC 2019 | IRE Journals | Volume 3 Issue 6 | ISSN: 2456-8880}
+
+\newcommand{\ssc}{\scriptscriptstyle}
+%
+\def\rmfcintilla{{\it Rev.\ Mex.\ Fis.\/} {\bf ??} (*?*) (????) ???--???}
+\clearpage \rmfcaptionstyle \pagestyle{myheadings}
+\setcounter{page}{1}
+
+\begin{document}
+\markboth{ RMF Editorial Team    }{ A \LaTeX template for the RMF, RMF-E, SRMF }
+
+\title{Data Structures and Its Limitations
+\vspace{-6pt}}
+\author{  VISHAL V. MEHTRE 1
+, UDBHAV SINGH 2       }
+\address{1 Assistant Professor, Department of Electrical Engineering, Bharati Vidyapeeth Deemed University,
+College of Engineering, Pune, India}
+\address{2 Assistant Professor, Department of Electrical Engineering, Bharati Vidyapeeth Deemed University,
+College of Engineering, Pune, India
+}
+
+\author{ }
+\address{ }
+\author{ }
+\address{ }
+\author{ }
+\address{ }
+\author{ }
+\address{ }
+\author{ }
+\address{ }
+\maketitle
+
+\begin{abstract}
+Abstract
+\end{abstract}
+
+\vspace{-8pt}
+\begin{multicols}{2}
+
+In this growing age of technology, computers
+play one of the most important roles. Be it medical
+surgeries to handling of huge power grids and power
+generation stations, all are controlled by computers. The
+most basic requirement of a computer to carry out its task
+is data. The data that is provided is initially in the raw
+form, but in order for it to work with other machinery that
+is required to carry out the task and produce an output the
+data needs to be structured. This structuring of data is
+done by some simple commands and algorithms termed as
+data structure. [1] This review paper aims at introducing
+different types of data structures as well as addressing the
+shortcomings of certain data structure. I will also try to
+point out certain improvements that can be carried out in
+certain data structures.
+
+\section{Introduction}
+
+DATA STRUCTURES:
+Data structure is a method of structuring of data for
+easy usage and retrieval. The basic aim of data
+structure is to collect data values at a single place,
+establish relationship between the data and the
+different functions and operations that can be carried
+out on the collected data. 
+[2]The various types of data
+structures are mentioned below along with a brief
+introduction to each:-
+LINEAR DATA STRUCTURE:
+1. Array: - An array is the most basic data structure.
+It stores values adjacent to each other ie.
+Contiguous memory locations. The address of the
+data value next to the selected Data value can be
+easily retrieved by incrementing the address of the
+selected Data value by one. The data types of all
+elements in array are same.
+Real life example: - Array can be understood similar
+to a staircase where the first Stair is the base value of
+
+the array and each and every subsequent data value is
+Similar to following stairs.
+Fig1. Basic structure of array
+2. Stack: - Stack is a type of linear data structure ie.
+All the operations that are to be performed on the
+data values are done In a particular order. The order
+that may be Followed LIFO (Last in First Out) or
+FILO (First in Last Out). [5] In stack the data values
+are added on top of each other and so there is a top
+value that keeps a track on the number of elements
+present in the stack. Real life example: - Books
+vertically placed on top of each other.
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{NSTU.jpg}
+\caption{\label{fig:NSTU}This picture was uploaded via the file-tree menu.}
+\end{figure}
+
+
+Mathematical expressions are intruduced in standard way as in   \mintinline{latex}{$x^2$} that appears as $x^2$. Unnumbered expressions like 
+$$a x^2 + b x + c = 0 $$
+
+Numbered equations 
+\begin{equation}
+    E=mc^2 \label{eq:Einstein}
+\end{equation}
+\section{Figures, Tables}
+ \begin{figure}[H]
+ \includegraphics[width=\linewidth]
+   {NSTU.jpg}
+ \caption{NSTU view from LAL BUS}
+ \label{fig:NSTU.jpg}
+\end{figure}
+Tables are introduced as in the following example
+
+\begin{table}[H]
+ \centering
+ \caption{True-false Table}
+ 
+ \begin{tabular}{cc|c}
+  $p$&$q$&$p\land q$\\
+  \hline
+  0&0&0\\
+  0&1&0\\
+  1&0&0\\
+  1&1&1
+ \end{tabular}\label{table1}
+\end{table}
+As usual, tables can be crossreferenced in the text~\ref{table1}.
+
+
+
+\end{multicols}
+\end{document}
